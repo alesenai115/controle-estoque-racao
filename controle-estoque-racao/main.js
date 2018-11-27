@@ -5,8 +5,9 @@ app.on('ready', ()=> {
     	width: 1000,
     	height: 800,
     	minWidth: 1000,
-    	minHeight: 800
+        minHeight: 800
     });        
-    Menu.setApplicationMenu(null)
+    Menu.setApplicationMenu(null);
     mainWindow.loadURL(`file://${__dirname}/index.html`);
+    mainWindow.webContents.openDevTools();
 });

@@ -21,3 +21,34 @@
  	overflow-x: hidden;
  	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+
+.side-bar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.side-bar .nav-link.active {
+  color: #007bff;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+		.sidebar-sticky {
+			position: -webkit-sticky;
+			position: sticky;
+		}
+}
+  
+/*
+ * Content
+ */
+
+[role="main"] {
+	padding-top: 48px; /* Space for fixed navbar */
+	}
+	
+/*
+*	NavBar
+*/
+.navbar-logo-icon{
+	 margin-left: 15px;
+}
